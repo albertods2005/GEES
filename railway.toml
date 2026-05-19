@@ -1,0 +1,2 @@
+[deploy]
+startCommand = "php artisan migrate --force && php artisan db:seed --class=AdminSeeder --force && (php artisan storage:link || true) && php artisan optimize && frankenphp run --config /Caddyfile"
