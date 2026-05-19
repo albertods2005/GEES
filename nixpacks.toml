@@ -1,6 +1,6 @@
 [phases.build]
 cmds = [
-    "npm ci",
+    "npm ci --include=dev",
     "npm run build",
     "composer install --no-dev --optimize-autoloader",
     "php artisan config:cache",
